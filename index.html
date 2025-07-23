@@ -1,27 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowers Market</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
 </head>
+
 <body>
-    <header>
-        <nav class="max-w-[1140px] my-3 mx-auto flex justify-between items-center">
+    <header class="mx-2">
+        <nav class="max-w-[1140px] my-3 mx-auto flex justify-between items-center max-sm:my-2">
             <div class="logo ">
                 <a href="#"><img class="max-sm:w-16" src="./assets/logo.png" alt="logo image"></a>
             </div>
-            <ul class="flex justify-between gap-12">
-                <li class="max-sm:hidden text-[#8987A1] font-bold hover:text-black"><a href="#">Home</a></li>
-                <li class="max-sm:hidden text-[#8987A1] font-bold hover:text-black"><a href="#">Shope</a></li>
-                <li class="max-sm:hidden text-[#8987A1] font-bold hover:text-black"><a href="#">About Us</a></li>
-                <li class=" text-[#8987A1] font-bold hover:text-black"><a href="#"><i class="fa-solid fa-cart-shopping"></i> Cart <span>($56)</span></a></li>
+            <ul class="flex justify-between gap-12 inter">
+                <li class="max-sm:hidden text-[#8987A1] hover:text-black"><a href="#">Home</a></li>
+                <li class="max-sm:hidden text-[#8987A1] hover:text-black"><a href="#">Shope</a></li>
+                <li class="max-sm:hidden text-[#8987A1] hover:text-black"><a href="#">About Us</a></li>
+                <li class=" text-[#8987A1] hover:text-black"><a href="#">
+                        <i class="fa-solid fa-cart-shopping"></i> Cart <span>($56)</span></a>
+                </li>
             </ul>
         </nav>
+        <section class="banner max-w-[1140px] my-[7.5rem] mx-auto flex max-sm:flex-col-reverse justify-between items-center box-border max-sm:my-2">
+            <div class="banner-content max-sm:mt-7">
+                    <h1 class="text-[4.3rem] max-sm:text-2xl font-bold noto-serif">
+                    ALWAYS <span class="text-[#E95A08]">FRESH</span> <br> <span class="text-[#E95A08]">FLOWERS</span>
+                </h1>
+                <p class="text-[#00000080] inter max-sm:max-w-[360px] text-justify">
+                    Indulge your senses with the beauty and fragrance of our fresh flower shop. From classic roses to exotic blooms, we offer a wide variety of fresh flowers that are perfect for any occasion. 
+                </p>
+            </div>
+            <div class="banner-img w-full">
+                <img src="./assets/hero-flower.png" alt="banner-flower">
+            </div>
+        </section>
     </header>
     <main></main>
     <footer></footer>
 </body>
+
 </html>
