@@ -5,3 +5,12 @@
 .inter {
     font-family: "Inter", sans-serif;
 }
+
+@keyframes move {
+    from{ top: -100px;}
+    to{top: 0px;}
+}
+
+.ani{
+    animation: move 5s infinite;
+}
